@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -52,6 +53,18 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				prime: {
+					2: 'hsl(var(--prime-2))',   // 🎩 Creativity  
+					3: 'hsl(var(--prime-3))',   // 🎲 Chaos
+					5: 'hsl(var(--prime-5))',   // 🔢 Structure
+					7: 'hsl(var(--prime-7))',   // 🎶 Harmony
+					11: 'hsl(var(--prime-11))', // 🎷 Expression
+					13: 'hsl(var(--prime-13))', // 📜 Legacy
+					17: 'hsl(var(--prime-17))', // 🧬 Evolution
+					19: 'hsl(var(--prime-19))', // 🎯 Focus
+					23: 'hsl(var(--prime-23))', // 🚀 Launch
+					29: 'hsl(var(--prime-29))'  // 🪐 System
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -67,6 +80,19 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'cosmic': 'var(--gradient-cosmic)',
+				'nebula': 'var(--gradient-nebula)', 
+				'stellar': 'var(--gradient-stellar)'
+			},
+			boxShadow: {
+				'cosmic': 'var(--shadow-cosmic)',
+				'deep': 'var(--shadow-deep)',
+				'glow-prime': 'var(--glow-prime)'
+			},
+			transitionTimingFunction: {
+				'cosmic': 'cubic-bezier(0.4, 0, 0.2, 1)'
 			},
 			keyframes: {
 				'accordion-down': {
